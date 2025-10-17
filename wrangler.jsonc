@@ -9,7 +9,13 @@
 	"compatibility_date": "2025-10-11",
 	"observability": {
 		"enabled": true
-	}
+	},
+	"kv_namespaces": [
+		{
+			"binding": "REVIEWS_DB", // 👈 This will be used inside worker.ts
+			"id": "302a2d82884a4964b4856150dd1c30ef" // will be filled after creation
+		}
+	]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "types": [
+            "@cloudflare/workers-types"
+        ],
+        "lib": [
+            "ES2021",
+            "WebWorker"
+        ],
+        "module": "esnext",
+        "target": "es2021",
+        "moduleResolution": "node"
+    }
+}
