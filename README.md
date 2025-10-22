@@ -70,7 +70,7 @@ This Worker now includes support for **Cloudflare KV**, enabling simple and scal
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
 | `GET` | `/health` | Health check |
-| `POST` | `/chat` | Forwards AI chat to GitHub Models API |
+| `POST` | `/AI/chat` | Forwards AI chat to GitHub Models API |
 | `POST` | `/reviews` | Saves user review to KV DB |
 | `GET` | `/reviews` | Retrieves all reviews from KV DB |
 

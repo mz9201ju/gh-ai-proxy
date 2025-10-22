@@ -15,7 +15,7 @@ const worker: ExportedHandler<Env> = {
     if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors() });
 
     // Health check endpoint
-    if (req.method === "GET" && url.pathname === "/") {
+    if (req.method === "GET" && url.pathname === "/health") {
       return json({
         ok: true,
         proxy: "github-models",
@@ -33,7 +33,7 @@ const worker: ExportedHandler<Env> = {
     }
 
     // GitHub proxy endpoint
-    if (req.method === "POST") {
+    if (req.method === "POST" && url.pathname === "/AI/chat") {
       return handleGitHubProxy(req, env);
     }
 
